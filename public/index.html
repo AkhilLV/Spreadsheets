@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Spread Sheet</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+      integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <div class="app">
+      <header>
+        <h1>tables</h1>
+
+        <div class="field-set">
+          <input
+            type="number"
+            placeholder="Number of columns..."
+            id="col"
+            min="1"
+          />
+
+          <input
+            type="number"
+            placeholder="Number of rows..."
+            id="row"
+            min="1"
+          />
+        </div>
+
+        <div class="buttons">
+          <a href="#" class="btn">Generate</a>
+          <a href="#" class="btn btn-save">Save</a>
+        </div>
+      </header>
+
+      <div class="table-container">
+        <div class="table"></div>
+      </div>
+    </div>
+
+    <div class="overlay hide"></div>
+
+    <div class="modal hide">
+      <div class="field-set">
+        <label for="" class="heading-1">Name</label>
+        <input
+          type="text"
+          placeholder="Enter table name"
+          class="table-name-input"
+        />
+      </div>
+
+      <div class="field-set">
+        <input type="checkbox" name="checkbox" id="checkbox" />
+        <label for="checkbox" class="info" id="checkbox"
+          >Include name as heading in the table</label
+        >
+      </div>
+
+      <div class="field-set select-preset">
+        <label class="heading-1">Choose a preset</label>
+        <div class="container">
+          <a href="#" class="preset preset-1" data-color="#fc7e00"></a>
+          <a href="#" class="preset preset-2" data-color="#29d37e"></a>
+        </div>
+      </div>
+
+      <a href="#" class="btn btn-save-as-png">Save as PNG</a>
+    </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/downloadjs/1.4.8/download.min.js"
+      integrity="sha512-WiGQZv8WpmQVRUFXZywo7pHIO0G/o3RyiAJZj8YXNN4AV7ReR1RYWVmZJ6y3H06blPcjJmG/sBpOVZjTSFFlzQ=="
+      crossorigin="anonymous"
+    ></script>
+    <script src="main.js"></script>
+  </body>
+</html>
